@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     height: 80px;
     display: flex;
@@ -26,6 +30,14 @@ img {
 
 p {
     line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .nav__container {
@@ -146,6 +158,16 @@ button:active {
     margin: 0 auto;
 }
 
+.row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-cursor {
+    cursor: not-allowed;
+}
+
 /* HIGHLIGHT */
 
 #highlights {
@@ -249,6 +271,7 @@ button:active {
 .book__title {
     font-size: 20px;
     margin-bottom: 8px;
+    padding: 0 20px;
 }
 
 .book__title:hover {
@@ -259,10 +282,46 @@ button:active {
 .book__ratings {
     margin-bottom: 8px;
     color: #fabf2a;
+    padding: 0 20px;
 }
 
 .book__price--normal {
     text-decoration: line-through;
     padding-right: 6px;
     color: #bfbfbf;
+    padding: 0 20px;
+}
+
+/*Explore */
+
+#explore {
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #242424;
+}
+
+.footer__logo {
+    display: flex;
+}
+
+.footer__logo--img {
+    width: 160px;
+    filter: grayscale(1) invert(1);
+}
+
+.footer__link,
+.footer__copyright {
+    color: #ffffff;
+}
+
+.footer__list {
+    margin: 20px 0 24px 0;
+}
+
+.footer__link {
+     padding: 0 8px;
 }
